@@ -1,3 +1,378 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/* DESKTOP VIEW */
+
+.container {
+	width: 900px;
+	margin: auto;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    flex-direction:row-reverse;
+    align-items:center;
+    margin:20px 0px;
+}
+.logo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+header nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+header nav a{
+	margin: 0 15px;
+	color:gray;
+}
+.cta h3{
+	text-align: center;
+	font-size:80px;
+}
+
+.cta button{
+    width: 200px;
+    height:50px;
+	background:white;
+    border: 1px solid black;
+}
+.cta{
+    display:flex;
+    flex-direction: row;
+    margin:30px 0;
+}
+.ctaTop{
+}
+.ctaTop button{
+    margin-left:25%;
+}    
+.cta div{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width:55%;
+    margin:30px;
+}
+.cta img{
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.main-content{
+    display:flex;
+    margin:10px;
+}
+
+.main-content div{
+    display: flex;
+    flex-wrap: wrap;
+	width: 50%;
+	margin:20px;
+}
+.content p{
+	margin: 2px;
+}
+.middle .middle-img{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    margin:25px 0;
+    
+}
+.bottom{
+    display:flex;
+    margin:20px 0;
+}
+.bottom .content{
+    display: flex;
+    flex-wrap:wrap;
+}
+.underline h3 {
+	margin-left: 50px;
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+    margin:40px 0;
+}
+.contact div{
+    margin:5px 0;
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+}
+footer{
+    margin-bottom:20px;
+}
+
+
+.main-content{
+    display:flex;
+}
+.middle{
+    display:flex;
+}
+.bottom{
+    display:flex;
+}
+
+
+/*END OF DESKTOP VIEW*/
+/*__________________________________________*/
+
+/*TABLET VIEW 800px */
+@media (max-width: 800px){
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+    header{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction:column;
+        margin:20px 0;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin:20px 0;
+    }
+    
+    header nav{
+        width:105%;
+        display:flex;
+        justify-content:space-between;
+    }
+
+    .cta img{
+        display:none;
+    }
+    .ctaTop button{
+        margin-left:25%;
+    }   
+    .cta{
+        display:flex;
+        justify-content: center;
+    }
+    .middle{
+        margin:20px 20px 20px 20px;
+    }
+    .bottom{
+        display:flex;
+        justify-content: center;
+        margin:30px 0;
+    }
+
+
+}
+
+
+/*END OF TABLET*/
+
+/*__________________________________________*/
+/*MOBILE VIEW 500px*/
+@media (max-width: 500px){
+    .container {
+        max-width: 500px;
+        margin: auto;
+    }
+    nav{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        padding:20px;
+    }
+    nav .anchor{
+        width:100%;
+        border:1px solid gray;
+        display:flex;
+        justify-content: center;
+        padding:20px;
+    }
+    header img{
+        display:flex;
+        justify-content: center;
+    }
+    .cta{
+        display:flex;
+        justify-content: center;
+    }
+    .ctaTop button{
+        margin-left:15%;
+    }   
+    .main-content{
+        display:flex;
+        flex-direction:column;
+        margin:50px 0;
+    }
+    .main-content div{
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        margin:30px 0;
+    }
+
+
+    .middle img{
+        display:flex;
+        width:100%;
+    }
+    
+    .bottom{
+        display:flex;
+        justify-content: column;
+        flex-wrap:wrap;
+    }
+    .bottom .content{
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        margin:30px 0;
+    }
+}
+
+/*END OF MOBILE*/
 
 
